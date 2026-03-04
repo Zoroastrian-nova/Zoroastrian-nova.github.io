@@ -20,6 +20,11 @@
             <div class="subsection-title"><b>香港中文大学(深圳)</b>，金融工程，<i>硕士</i></div>
             <div class="subsection-date">2025.09 - 至今</div>
         </div>
+        <div class="subsection-content">
+            <ul>
+                <li><b>核心课程</b>：最优化, 随机过程, 投资科学, 金融衍生品, 程序设计</li>
+            </ul>
+        </div>
     </div>
     <div class="subsection">
         <div class="subsection-header">
@@ -28,7 +33,6 @@
         </div>
         <div class="subsection-content">
             <ul>
-                <li><b>GPA</b> 3.5/4.0</li>
                 <li><b>核心课程</b>：数理统计，金融工程，数理金融，固定收益证券，计量经济学，数据挖掘导论</li>
             </ul>
         </div>
@@ -55,9 +59,9 @@
         </div>
         <div class="subsection-content">
             <ul>
-                <li>复现了基于VarLinGAM模型的因果关系发现算法，将因果推断融入因子合成流程</li>
-                <li>使用MCP搭建了自动化的研报复现智能体系统</li>
-                <li>使用大语言模型对研报观点进行定性和定量分析，打造了自动化的周度观点生成工作流</li>
+                <li><b>多因子指增策略</b>: 基于 <b>AlphaGen</b> 框架搭建了“LLM 生成 +RL 优化”的强化学习因子挖掘工作流，在沪深 300 指增策略中实现年化超额 7.2% (Sharpe 0.7, Group IC 0.099)，和遗传算法和纯 RL 方法相比具有显著优势</li>
+                <li><b>因子因果检验</b>：引入 <b>VarLinGAM</b> 因果推断模型对 Alpha158 因子进行二次筛选，识别出真正驱动收益的先导因子，增强了多因子模型的可解释性</li>
+                <li><b>NLP 情感因子</b>: 开发基于大语言模型的研报情感量化系统，将非结构化文本转化为高频情绪因子；构建了覆盖全市场的行业情绪热度指数，并成功集成至部门的自动化研报系统中</li>
             </ul>
         </div>
     </div>
@@ -68,8 +72,8 @@
         </div>
         <div class="subsection-content">
             <ul>
-                <li>编写 Python 脚本爬取和预处理金融数据,跟踪并深入分析私募净值，为做出明智的投资决策提供支持</li>
-                <li>使用 ARIMA 和 GARCH 等统计模型执行严格的时间序列分析，增强数据驱动的洞察力和预测准确性</li>
+                <li><b>数据清洗</b>: 编写 Python 脚本自动化爬取并清洗每日金融数据，构建了高可用的私募净值数据库</li>
+                <li><b>时间序列分析</b>: 使用 GARCH 模型对期货衍生品波动率进行建模预测，辅助撰写行情分析报告</li>
             </ul>
         </div>
     </div>
@@ -79,26 +83,36 @@
     <div class="section-title">项目经历</div>
     <div class="subsection">
         <div class="subsection-header">
-            <div class="subsection-title"><b>基于强化学习的 FOF 投资策略</b>，研究项目</div>
-            <div class="subsection-date">2024.09-2024.12</div>
+            <div class="subsection-title"><b> 基于深度学习模型的选股策略与高性能回测归因分析 </b>，研究项目  </div>
+            <div class="subsection-date">2025.09-2025.12</div>
         </div>
         <div class="subsection-content">
             <ul>
-                <li>开发了基于 DQN 模型的基金投资策略，通过强化学习实现 FOF 投资组合的动态构建，实现了约 12%的样本外年化收益率</li>
-                <li>使用 gym 构建了模拟基金投资的动态环境，使用基金 K 线数据与市场因子载荷，完成了稳健且可复用的环境设定与智能体训练</li>
+                <li><b>模型构建</b>: 提出并实现混合架构 AttentionGRU (Res)，融合 GRU、注意力机制及残差网络</li>
+                <li><b>高性能计算 (C++/Rust)</b>: 设计并实现了基于 Rust 和 C++ 的双引擎回测架构，通过内存管理优化与并行计算，将策略回测速度相比 Python 原生框架显著提升，支持 全市场数据的长时段回测</li>
+                <li><b>回测表现</b>: 在尚未进行组合优化的前提下，策略样本外年化收益率为 22.15%，最大回撤 −29.14%，夏普比率 0.62</li>
             </ul>
         </div>
     </div>
     <div class="subsection">
         <div class="subsection-header">
-            <div class="subsection-title"><b>基于深度学习的共同基金超额回报预测</b>，毕业论文</div>
+            <div class="subsection-title"><b>基于强化学习的 FOF 投资策略</b>，研究项目  </div>
+            <div class="subsection-date">2024.09-2024.12</div>
+        </div>
+        <div class="subsection-content">
+            <ul>
+                <li><b>策略开发与环境搭建</b>: 基于 OpenAI Gym 构建包含交易摩擦与滑点的仿真环境，开发了基于 DQN 的动态资产配置策略，实现了约 12% 的样本外年化收益率</li>
+            </ul>
+        </div>
+    </div>
+    <div class="subsection">
+        <div class="subsection-header">
+            <div class="subsection-title"><b>基于深度学习的共同基金超额回报预测</b>，毕业论文 </div>
             <div class="subsection-date">2024.03 - 2024.06</div>
         </div>
         <div class="subsection-content">
             <ul>
-                <li>使用 pytorch 开发并实现了三种预测模型：普通最小二乘（OLS）回归，长短期记忆（LSTM），以及 Transformer</li>
-                <li>使用 Newey-West t 检验评估模型性能，展示了深度学习预测的超额回报对实际基金表现有显著正面影响</li>
-                <li>基于模型预测创建投资组合，展示了 LSTM 在风险调整后的回报方面表现出色，而 Transformer 在市场风险调整后的 alpha 值方面有优势</li>
+                <li><b>多模型对比研究</b>: 复现并对比了线性模型和多种深度学习模型在基金 Alpha 预测上的表现。构建投资组合回测显示，LSTM 模型在风险调整后收益上表现最优，而 Transformer 模型在捕捉非线性 Alpha方面具有显著优势</li>
             </ul>
         </div>
     </div>
@@ -109,9 +123,7 @@
         </div>
         <div class="subsection-content">
             <ul>
-                <li>编程组员/团队项目：《无人机编队飞行中的方位角被动定位与姿态校正》</li>
-                <li>开发了一种纯几何解决方案，使无人机能够基于方位角信息实现二维被动定位，促进圆型和三角形编队的形成</li>
-                <li>使用 SciPy 数值求解关键偏微分方程（PDEs），以确定每个无人机基于给定位置的距离和方位角必要调整</li>
+                <li><b>团队协作/编程手</b>：负责《无人机编队飞行中的方位角被动定位》的算法实现与数值求解</li>
             </ul>
         </div>
     </div>
@@ -121,7 +133,7 @@
     <div class="section-title">技能</div>
     <div class="subsection-content">
         <ul>
-            <li><b>编程语言与软件</b>：Python, MATLAB, C, R, MySQL, Microsoft Office (Word/Excel/PowerPoint)</li>
+            <li><b>编程语言与软件</b>：Python, C++, R, Rust, Linux, Microsoft Office (Word/Excel/PowerPoint)</li>
             <li><b>语言能力</b>: 英语（流利），普通话（母语）| IELTS: 阅读 7.5 / 听力 7.5 / 说 5.5 / 写 6.5 / 总分 7.0 | GRE: V 155 Q 170</li>
         </ul>
     </div>
